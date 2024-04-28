@@ -1,0 +1,26 @@
+Apps:
+
+- Git
+- VSCode
+- Docker
+- Windows Terminal
+- Insomnia
+- Figma
+- Draw.io
+- Power Toys
+- Dev Toys
+
+- MongoDB Client
+- MySQL Client
+
+- Chrome
+- Brave
+- Notion
+
+- Discord
+- Whatsapp
+- Spotify
+- Lively Wallpaper
+
+- Python
+- NodeJS
