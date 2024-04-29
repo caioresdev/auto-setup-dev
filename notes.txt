@@ -24,3 +24,5 @@ Apps:
 
 - Python
 - NodeJS
+
+Utilizar o pyinstaller ou auto-py-to-exe para criar um executável (.exe) ou script shell.
