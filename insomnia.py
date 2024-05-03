@@ -2,12 +2,12 @@ import os
 import subprocess
 import requests
 
-def download_vscode_installer():
+def download_insomnia_installer():
     # URL do instalador do VSCode para Windows (64 bits)
-    url = "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user"
+    url = "https://updates.insomnia.rest/downloads/windows/latest?app=com.insomnia.app&source=website"
 
     # Nome do arquivo de destino
-    #filename = "vscode_installer.exe"
+    filename = "insomnia_installer.exe"
 
     # Realiza o download do arquivo
     with requests.get(url, stream=True) as response:
@@ -18,7 +18,7 @@ def download_vscode_installer():
 
     return filename
 
-def install_vscode_installer(installer_path):
+def install_insomnia_installer(installer_path):
     # Executa o instalador do VSCode
     subprocess.run([installer_path, "/silent"], check=True)
 
@@ -27,12 +27,12 @@ def main():
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
     # Baixa o instalador do VSCode
-    installer_path = download_vscode_installer()
+    installer_path = download_insomnia_installer()
 
     # Instala o VSCode
-    install_vscode_installer(installer_path)
+    install_insomnia_installer(installer_path)
 
-    print("Visual Studio Code foi instalado com sucesso!")
+    print("Insomnia foi instalado com sucesso!")
 
-#if __name__ == "__main__":
- #   main()
+if __name__ == "__main__":
+    main()
